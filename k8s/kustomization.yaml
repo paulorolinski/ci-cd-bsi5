@@ -6,4 +6,4 @@ resources:
 images:
 - name: app
   newName: opjorr/ci-cd-bsi5
-  newTag: fd759e36ba3b8561534f5f2bc7d3629b376d6df6
+  newTag: 4e88d7bc94055945898a07bfe8657fb3c010481d
