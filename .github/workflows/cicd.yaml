@@ -29,8 +29,8 @@ jobs:
           context: .
           push: true
           tags: |
-            eduardosilvasc/ci-cd-bsi5:latest
-            eduardosilvasc/ci-cd-bsi5:${{ github.sha }}
+            opjorr/ci-cd-bsi5:latest
+            opjorr/ci-cd-bsi5:${{ github.sha }}
 
       - name: Setup Kustomize
         uses: imranismail/setup-kustomize@v2
@@ -38,7 +38,7 @@ jobs:
       - name: Update kustomization.yaml
         run: |
           cd k8s
-          kustomize edit set image app=eduardosilvasc/ci-cd-bsi5:$GITHUB_SHA
+          kustomize edit set image app=opjorr/ci-cd-bsi5:$GITHUB_SHA
 
       - name: Commit changes
         run: |
