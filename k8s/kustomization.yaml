@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+- service.yaml
+images:
+- name: app
+  newName: eduardosilvasc/ci-cd-bsi5
+  newTag: fd759e36ba3b8561534f5f2bc7d3629b376d6df6
